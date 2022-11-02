@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@500&display=swap');
+body{
+    margin: 0px auto;
+    background-color: #FFFAFB;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #E1E1E1;
+}
+
+#div_logo_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+#botons_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#logo_header {
+    width: 40%;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+#carro {
+    width: 3%;
+    cursor: pointer;
+}
+
+#botons_header {
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+}
+
+.paraules_header {
+    margin-right: 6%;
+    font-size: 30px;
+    color: #707070;
+    font-family: 'Segoe UI';
+    cursor: pointer;
+}
+
+#zona_central {
+    display: flex;
+    flex-direction: column;
+}
+
+#zona_superior {
+    display: flex;
+    flex-direction: row;
+}
+
+#parts_triades {
+    width: 20%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 4.5%;
+}
+
+.part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3%;
+    background-color: #EEF0EF;
+    border: 1px solid #BBBBBB;
+    font-family: Helvetica;
+    font-weight: bold;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.nom_part{
+    color: #339989;
+}
+
+.part_item{
+    color: gray;
+}
+
+.icon_part {
+    width: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.nom_part {
+    margin-right: 5%;
+}
+
+#div_descripcio {
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-top: 4.5%;
+    width: 15%;
+    text-align: justify;
+    background-color: #EEF0EF;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+#img_i_nom {
+    width: 45%;
+}
+
+#product_title{
+    color: #339989;
+    font-weight: bolder;
+    font-family: Helvetica;
+    font-size: 30px;
+}
+
+#img_principal {
+    width: 100%;
+    border: 1px solid #BBBBBB;
+}
+
+#boto {
+    cursor: pointer;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 1%;
+    width: 25%;
+    background-color: #707070;
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #FFFAFB;
+    border-radius: 5px;
+    transition: all 0.5s;
+    display: inline-block;
+}
+
+#boto span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+#boto span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+#boto:hover span {
+    padding-right: 25px;
+}
+  
+#boto:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+#opcions_components {
+    width: 25%;
+    margin-top: 4.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.accordion {
+    width: 90%;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.accordion-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    background: #EEF0EF;
+    color: #339989;
+    border: 1px solid #BBBBBB;
+    font-family: Helvetica;
+}
+
+.accordion-content {
+    max-height: 0;
+    padding: 0 1em;
+    background-color: #FAFAFA;
+    color: #6abfb2;
+    transition: all 0.5s;
+    font-family: Helvetica;
+}
+
+.accordion-content div{
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+input:checked~.accordion-content {
+    max-height: 100vh;
+    padding: 1em;
+}
+
+#zona_inferior {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#seccions_parts {
+    display: flex;
+    flex-direction: row;
+    margin-left: 23%;
+    width: 54%;
+}
+
+.seccio {
+    display: flex;
+    background-color: #E1E1E1;
+    margin: 1%;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    border: 1px solid #BBBBBB;
+    cursor: pointer;
+    transition: 1s;
+}
+  
+.seccio:hover {
+  transform: scale(1.2);
+}
+
+#seleccionat{
+    background-color: #339989;
+}
+
+#seleccionat p{
+    color: #cef5ef;
+}
+
+.seccio p{
+    text-align: center;
+    font-family:'Gill Sans MT';
+    font-weight: bold;
+    color: #707070;
+}
+
+.img_zona_inferior {
+    width: 60%;
+}
+
+#adicionals{
+    margin-top: 1%;
+    margin-bottom: 15%;
+    font-size: 15px;
+}
+
+#preu {
+    background-color: #EEF0EF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-left: 0.3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 120px;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    border: 1px solid #BBBBBB;
+    font-family:'Gill Sans MT';
+}
+
+#total {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#numeros_total {
+    font-size: 40px;
+    padding-left: 5%;
+    color: #339989;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #CAEAE5;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin-left: 1%;
+}
+
+#menu a {
+    margin: 2%;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    color: #545353;
+    cursor: pointer;
+    width: 10%;
+    font-size: 18px;
+}
+
+#xarxes {
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#xarxes img {
+    width: 10%;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+#contacte {
+    width: 34%;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+}
+
+.contacte{
+    margin: 4%;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    color: #545353;
+}
+
+
+/*Responsive design*/
+@media only screen and (max-width: 720px) {
+
+    #logo_header {
+        width: 90%;
+        margin: 5%;
+    }
+
+    #carro {
+        width: 8%;
+    }
+
+    .paraules_header {
+        margin-right: 6%;
+        font-size: 20px;
+    }
+
+    #zona_central {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #zona_inferior {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #preu{
+        height: auto;
+        margin-top: 5%;
+    }
+
+    #total {
+        font-size: 20px;
+    }
+
+    #numeros_total {
+        font-size: 18px;
+        padding-left: 2%;
+    }
+
+    #seccions_parts {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0px auto;
+        flex-wrap: wrap;
+    }
+
+    .seccio {
+        width: 20%;
+        padding: 1%;
+        display: flex;
+        align-items: center;
+    }
+
+    .seccio p {
+        font-size: 12px;
+    }
+
+    .img_zona_inferior {
+        width: 40%;
+    }
+
+    #adicionals{
+        font-size: 12px;
+    }
+
+    #zona_superior {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #opcions_components {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .accordion {
+        width: 25%;
+    }
+
+    .accordion-label {
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+        font-size: 16px;
+    }
+
+    #img_i_nom, #div_descripcio {
+        width: 100%;
+        margin: 2%;
+    }
+    
+    #div_descripcio {
+        padding: 2%;
+        width: 95%;
+    }
+
+    #img_i_nom {
+        position: sticky;
+        top: 0px;
+        background-color: #FFFAFB;
+    }
+
+    #boto{
+        width: 40%;
+    }
+
+    #parts_triades{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .part {
+        width: 45%;
+        margin-left: 2%;
+        margin-right: 2%;
+
+    }
+    
+    .nom_part {
+        margin-right: 5%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    #menu{
+        order: 1;
+        width: 50%;
+        border-bottom: 1px solid #BBBBBB;
+    }
+
+    #menu a{
+        text-align: center;
+        width: 100%;
+    }
+
+    #xarxes{
+        order: 3;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #contacte{
+        width: 50%;
+        order: 2;
+        text-align: center;
+        border-bottom: 1px solid #BBBBBB;
+        margin-top: 5%;
+    }
+    
+    .contacte{
+        margin-top: 2%;
+    }
+}
