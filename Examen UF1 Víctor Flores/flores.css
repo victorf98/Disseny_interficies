@@ -1,0 +1,173 @@
+body{
+    margin: 0px auto;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    font-size: 24px;
+    width: 100%;
+    border-bottom: 5px solid green;
+}
+
+header div{
+    margin: 0px auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#cos-principal{
+    display: flex;
+    width: 900px;
+    background-color: white;
+    margin: 0px auto;
+}
+
+#col-esquerre{
+    width: 70%;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+
+.mySlides {
+    display:none;
+}
+
+#primer-titol{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: gray;
+}
+
+#paragraf{
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+iframe{
+    width: 100%;
+}
+
+#col-dreta{
+    width: 28%;
+}
+
+#caixa-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+#caixa-img img{
+    width: 85%;
+    margin: 4%;
+}
+
+#menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+#menu a:hover {
+    background-color: #ccc;
+  }
+  
+#menu a.active {
+    background-color: black;
+    color: white;
+}
+
+#text{
+    background-color: gray;
+    margin: 0px auto;
+}
+
+#text p{
+    line-height: 1.5em;
+    color: white;
+    padding: 10%;
+    text-align: justify;
+}
+
+#seccio-inferior{
+    background-color: gray;
+    border-top: 5px solid black;
+    width: 100%;
+}
+
+#interior{
+    display: flex;
+    margin: 0px auto;
+    width: 900px;
+}
+
+.seccio{
+    margin: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+#esquerra{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#esquerra-inferior{
+    display: flex;
+    flex-direction: row;
+}
+
+.inferior{
+    height: 55px;
+    width: 50%;
+}
+
+#html-1{
+    height: 55px;
+}
+
+#dreta{
+    width: 28%;
+}
+
+#web{
+    height: 125px;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+}
+
+footer div{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+@media only screen and (max-width:620px){
+    #cos-principal{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+
+    #col-esquerre, #col-dreta{
+        width: 100%;
+    }
+}

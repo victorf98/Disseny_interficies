@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pagina web de l'examen HTML i CSS">
+    <meta name="keywords" content="HTML, CSS">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flores.css">
+    </link>
+    <title>Exàmen HTML i CSS</title>
+</head>
+
+<body>
+    <header>
+        <div>Exàmen HTML i CSS</div>
+    </header>
+
+    <div id="cos-principal">
+        <div id="col-esquerre">
+            <div id="slider" style="max-width:900px">
+                <img class="mySlides" src="img/img_chicago.jpg" style="width:100%">
+                <img class="mySlides" src="img/img_la.jpg" style="width:100%">
+                <img class="mySlides" src="img/img_ny.jpg" style="width:100%">
+            </div>
+            <h1 id="primer-titol">Primer títol</h1>
+            <p id="paragraf">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat”</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CbB7gp6bXbg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div id="col-dreta">
+            <div id="caixa-img">
+                <img src="img/canada-media-music-website-entertainment-logo-design.png">
+            </div>
+            <div id="menu">
+                <a href="#" class="active">Home</a>
+                <a href="#">News</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+            </div>
+            <div id="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="seccio-inferior">
+        <div id="interior">
+            <div id="esquerra">
+                <div id="html-1" class="seccio">
+                    Altura:55px<br>
+                    Width:70%
+                </div>
+                <div id="esquerra-inferior">
+                    <div class="inferior seccio" id="html-2">
+                        Altura:55px<br>
+                        Width:32%
+                    </div>
+                    <div class="inferior seccio" id="audio">
+                        Altura:55px<br>
+                        Width:32%
+                    </div>
+                </div>
+            </div>  
+            <div class="seccio" id="dreta">
+                <div id="web">
+                    Altura: 125px <br>
+                    Width: 28%
+                </div>
+            </div>          
+        </div>
+    </div>
+
+    <footer>
+        <div>Aplicacions Web - SMx 2017</div>
+    </footer>
+
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>
