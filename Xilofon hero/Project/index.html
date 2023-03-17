@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xilòfon hero</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li>
+                    <div id="user" class="menu__item">
+                        <img src="./img/leo.png" id="img">
+                        <p id="nom">LEO</p>
+                    </div>
+                </li>
+                <li>
+                    <div id="puntuacio" class="menu__item">
+                        <p id="canço_actual"></p>
+                        <p id="punts_puntuacio">0</p>
+                    </div>
+                </li>
+                <li>
+                    <div id="cançons" class="menu__item">
+                        <img src="./img/nota.png" width="30px" id="titol_cançons">
+                        <p class="canço" onclick="play('El gegant del pi')">EL GENGANT DEL PI</p>
+                        <p class="canço" onclick="play('Ara ve nadal')">ARA VE NADAL</p>
+                        <p class="canço" onclick="play('Plou i fa sol')">PLOU I FA SOL</p>
+                    </div>
+                </li>
+                <li>
+                    <div id="puntuacio_maxima" class="menu__item">
+                        <h4 id="titol_puntuacio_maxima">RÉCORD</h4>
+                        <p id="punts_puntuacio_maxima">0 PUNTS</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="contingut">
+            <div id="notes">
+                <div id="nota_següent" class="nota">
+
+                </div>
+                <div id="nota_actual" class="nota">
+
+                </div>
+                <div id="nota_anterior" class="nota">
+
+                </div>
+            </div>
+            <div id="xilofon">
+                <div id="do" class="tecla" onclick="clicarNota('do')">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div id="re" class="tecla" onclick="clicarNota('re')">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div id="mi" class="tecla" onclick="clicarNota('mi')">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div id="fa" class="tecla" onclick="clicarNota('fa')">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div id="sol" class="tecla" onclick="clicarNota('sol')">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div id="la" class="tecla" onclick="clicarNota('la')">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div id="si" class="tecla" onclick="clicarNota('si')">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div id="do_agut" class="tecla" onclick="clicarNota('do_agut')">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="footer">
+        <div id="rrss">
+            <img src="./img/twitter.png" width="5%">
+            <img src="./img/linkedin.png" width="5%">
+        </div>
+        <p>© 2023 Xilòfon hero</p>
+    </div>
+</body>
+
+</html>
